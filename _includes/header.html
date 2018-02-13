@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js {{ include.class }} {{ page.classes }}" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{{ page.title }} - {{ site.title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="/assets/css/site.css">
+		{% if page.css %}<link rel="stylesheet" href="{{ page.css }}">{% endif %}
+
+
+    </head>
+    <body>
+		<div class="PageContent">		
+					<div class="Header">
+						<header>
+							<div class="Masthead">
+								<h1 class="Masthead__siteTitle">
+									<a href="/" rel="home">
+										
+									{% if site.headerLogo %}
+										<img src="{{ site.headerLogo }}">
+									{% endif %}
+		
+									<b class="u-Masthead__siteTitle__text">{{ site.title }}</b></a>
+								</h1>
+
+									{% if site.subtitle %}
+										{{ site.subtitle }}
+									{% endif %}
+							</div>
+						</header>
+					</div><!-- #masthead -->
+			
+				
+					<div class="u-lMain" role="main">	    

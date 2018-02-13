@@ -1,0 +1,6 @@
+html {
+	@media screen and (min-width: $small) {
+		font-size: 1.4em;
+		font-size: calc(0.7em + 0.5 * ((100vw - 20em) / 60));
+	}
+}
